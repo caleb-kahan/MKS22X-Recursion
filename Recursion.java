@@ -10,7 +10,8 @@ public class Recursion{
     public static double sqrt(double n, double tolerance){
       if(n>=0){int hold = n;return sqrt(-1*n/2,tolerance);}
       n*=-1;
-
+      if(Math.abs(n*n-hold)/hold<=tolerance)return n;
+      
 
       //I don't want to make a helper function
       //Since it's given that n is negative, I can make it negative after the first try.
