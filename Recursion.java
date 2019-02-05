@@ -23,10 +23,15 @@ public class Recursion{
      *precondition: n is non-negative
      */
     public static int fib(int n){
-      if(n<=1)return n;
-      
+        if(n==0 || n==1)return n;
+    }
+    public static int fib(int n, int first, int second){
+        if(n==0 || n==1)second; 
+      return fib(n-1,)
+
 
     }
+    public static int fibH(int n)
 
     /*As Per classwork*/
     public static ArrayList<Integer> makeAllSums(int n){
