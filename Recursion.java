@@ -8,15 +8,11 @@ public class Recursion{
 
     */
     public static double sqrt(double n, double tolerance){
-      if(n>=0){double hold = n;return sqrt(-1*n/2,tolerance);}
-      n*=-1;
+      return sqrtHelp(n,tolerance,n/2);
+    }
+    private static sqrtHelp (double n, double tolerance, double guess){
       if(Math.abs(n*n-hold)/hold<=tolerance)return n;
       return sqrt((hold/n+n)/2,tolerance);
-
-
-      //I don't want to make a helper function
-      //Since it's given that n is negative, I can make it negative after the first try.
-      //That means I can differentiate the initial call.
 
     }
 
