@@ -34,6 +34,12 @@ public class Recursion{
     public static void main(String[] args){
       System.out.println(Math.sqrt(2)+ " Fake Version: "+ sqrt(2,0.0000000000001));
 
+      for(int i=0;i<20;i++){
+        System.out.println(fib(i));
+      }
+
+      System.out.println(makeAllSums(1));
+
 
     }
 
