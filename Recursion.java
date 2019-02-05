@@ -6,7 +6,7 @@ public class Recursion{
     }
     private static double sqrtHelp (double n, double tolerance, double guess){
       if(Math.abs(guess*guess-n)/n<=tolerance)return guess;
-      return sqrtHelp((n/guess+guess)/2,tolerance);
+      return sqrtHelp(n,tolerance,(n/guess+guess)/2);
 
     }
 
