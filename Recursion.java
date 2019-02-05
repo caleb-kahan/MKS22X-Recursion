@@ -29,8 +29,8 @@ public class Recursion{
     public static void makeAllSums(int n,int sum, ArrayList<Integer> adder){
       if(n==0){adder.add(sum);}
       else{
-          makeAllSums(n-1,sum+n,adder);
           makeAllSums(n-1,sum,adder);
+          makeAllSums(n-1,sum+n,adder);
       }
     }
     public static void main(String[] args){
@@ -40,7 +40,8 @@ public class Recursion{
         System.out.println(fib(i));
       }
 
-      System.out.println(makeAllSums(1));
+      System.out.println(makeAllSums(3));
+      System.out.println(makeAllSums(4));
 
 
     }
