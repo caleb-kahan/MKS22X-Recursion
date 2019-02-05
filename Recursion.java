@@ -11,8 +11,8 @@ public class Recursion{
       return sqrtHelp(n,tolerance,n/2);
     }
     private static double sqrtHelp (double n, double tolerance, double guess){
-      if(Math.abs(n*n-hold)/hold<=tolerance)return n;
-      return sqrt((hold/n+n)/2,tolerance);
+      if(Math.abs(guess*guess-n)/n<=tolerance)return guess;
+      return sqrt((n/guess+guess)/2,tolerance);
 
     }
 
