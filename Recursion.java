@@ -24,10 +24,11 @@ public class Recursion{
      */
     public static int fib(int n){
         if(n==0 || n==1)return n;
+        return fib(n,0,1);
     }
-    public static int fib(int n, int first, int second){
-        if(n==0 || n==1)second; 
-      return fib(n-1,)
+    private static int fib(int n, int first, int second){
+        if(n==0 || n==1)return second;
+      return fib(n-1,second, second+first);
 
 
     }
