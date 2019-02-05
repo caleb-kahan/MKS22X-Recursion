@@ -27,7 +27,7 @@ public class Recursion{
       return returner;
     }
     public static void makeAllSums(int n,int sum, ArrayList<Integer> adder){
-      if(n==0){adder.add(sum);return n;}
+      if(n==0){adder.add(sum);}
       makeAllSums(n-1,sum+n,adder);
       makeAllSums(n-1,sum,adder);
     }
