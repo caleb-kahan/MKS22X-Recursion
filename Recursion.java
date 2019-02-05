@@ -10,6 +10,7 @@ public class Recursion{
       if(n>=0){int hold = n;return sqrt(-1*n/2,tolerance);}
       n*=-1;
       if(Math.abs(n*n-hold)/hold<=tolerance)return n;
+      return sqrt((hold/n+n)/2,tolerance);
 
 
       //I don't want to make a helper function
