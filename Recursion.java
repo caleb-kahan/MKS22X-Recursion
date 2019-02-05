@@ -22,6 +22,10 @@ public class Recursion{
     }
     /*As Per classwork*/
     public static ArrayList<Integer> makeAllSums(int n){
+
+    }
+    public static int makeAllSums(int n, ArrayList<Integer> adder){
+      
     }
     public static void main(String[] args){
       System.out.println(Math.sqrt(2)+ " Fake Version: "+ sqrt(2,0.00001));
