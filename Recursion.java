@@ -5,7 +5,8 @@ public class Recursion{
       return sqrtHelp(n,tolerance,n/2);
     }
     private static double sqrtHelp (double n, double tolerance, double guess){
-      if(Math.abs(guess*guess-n)/n<=tolerance)return guess;
+      if(Math.abs(guess*guess-n)/n<=tolerance)
+        return guess;
       return sqrtHelp(n,tolerance,(n/guess+guess)/2);
 
     }
@@ -14,7 +15,8 @@ public class Recursion{
         return fib(n,0,1);
     }
     private static int fib(int n, int zero, int first){
-        if(n==0)return zero;
+        if(n==0)
+          return zero;
         return fib(n-1,first, zero+first);
         //Logic: From to get N to 0, there will be n runs.
         //That means the 0th number will be updated n times.
@@ -27,7 +29,8 @@ public class Recursion{
       return returner;
     }
     public static void makeAllSums(int n,int sum, ArrayList<Integer> adder){
-      if(n==0){adder.add(sum);}
+      if(n==0)
+        adder.add(sum);
       else{
           makeAllSums(n-1,sum,adder);
           makeAllSums(n-1,sum+n,adder);
@@ -42,8 +45,5 @@ public class Recursion{
 
       System.out.println(makeAllSums(3));
       System.out.println(makeAllSums(4));
-
-
     }
-
 }
