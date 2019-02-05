@@ -23,12 +23,11 @@ public class Recursion{
      *precondition: n is non-negative
      */
     public static int fib(int n){
-        if(n==0 || n==1)return n;
         return fib(n,0,1);
     }
     private static int fib(int n, int zero, int first){
-        if(n==0 || n==1)return second;
-      return fib(n-1,second, second+first);
+        if(n==0)return zero;
+      return fib(n-1,first, zero+first);
 
 
     }
