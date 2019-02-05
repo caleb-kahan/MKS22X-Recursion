@@ -10,7 +10,7 @@ public class Recursion{
     public static double sqrt(double n, double tolerance){
       return sqrtHelp(n,tolerance,n/2);
     }
-    private static sqrtHelp (double n, double tolerance, double guess){
+    private static double sqrtHelp (double n, double tolerance, double guess){
       if(Math.abs(n*n-hold)/hold<=tolerance)return n;
       return sqrt((hold/n+n)/2,tolerance);
 
