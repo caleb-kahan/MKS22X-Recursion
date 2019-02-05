@@ -32,7 +32,9 @@ public class Recursion{
       makeAllSums(n-1,sum,adder);
     }
     public static void main(String[] args){
-      System.out.println(Math.sqrt(2)+ " Fake Version: "+ sqrt(2,0.00001));
+      System.out.println(Math.sqrt(2)+ " Fake Version: "+ sqrt(2,0.0000000000001));
+
+
     }
 
 }
