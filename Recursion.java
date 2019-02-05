@@ -26,9 +26,9 @@ public class Recursion{
       makeAllSums(n,0,returner);
       return returner;
     }
-    public static int makeAllSums(int n,int sum, ArrayList<Integer> adder){
+    public static void makeAllSums(int n,int sum, ArrayList<Integer> adder){
       if(n==0){adder.add(sum);return n;}
-      makeAllSums(n-1,sum+n,adder)
+      makeAllSums(n-1,sum+n,adder);
       makeAllSums(n-1,sum,adder);
     }
     public static void main(String[] args){
