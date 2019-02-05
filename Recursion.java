@@ -22,7 +22,9 @@ public class Recursion{
     }
     /*As Per classwork*/
     public static ArrayList<Integer> makeAllSums(int n){
-
+      ArrayList<Integer> returner = new ArrayList<Integer>();
+      makeAllSums(n,0,returner);
+      return returner;
     }
     public static int makeAllSums(int n,int sum, ArrayList<Integer> adder){
       if(n==0){adder.add(sum);return n;}
