@@ -28,8 +28,9 @@ public class Recursion{
     private static int fib(int n, int zero, int first){
         if(n==0)return zero;
         return fib(n-1,first, zero+first);
-
-
+        //Logic: From to get N to 0, there will be n runs.
+        //That means the 0th number will be updated n times.
+        //0+n>Nth number of fibonacci sequence. 
     }
     public static int fibH(int n)
 
