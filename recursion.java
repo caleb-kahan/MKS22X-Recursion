@@ -5,7 +5,9 @@ public class recursion{
       return sqrtHelp(n,tolerance,n/2);
     }
     private static double sqrtHelp (double n, double tolerance, double guess){
-      if(Math.abs(guess*guess-n)<=n*tolerance)
+      //I forgot about 0. I'm not going to multiply tolerance by n.
+      if(n==0)return 0;
+      if(Math.abs(guess*guess-n)/n<=tolerance)
         return guess;
       return sqrtHelp(n,tolerance,(n/guess+guess)/2);
 
