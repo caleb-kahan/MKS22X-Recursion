@@ -5,7 +5,7 @@ public class recursion{
       return sqrtHelp(n,tolerance,n/2);
     }
     private static double sqrtHelp (double n, double tolerance, double guess){
-      if(Math.abs(guess*guess-n)/n<=tolerance)
+      if(Math.abs(guess*guess-n)<=n*tolerance)
         return guess;
       return sqrtHelp(n,tolerance,(n/guess+guess)/2);
 
@@ -36,14 +36,5 @@ public class recursion{
           makeAllSums(n-1,sum+n,adder);
       }
     }
-    public static void main(String[] args){
-      System.out.println(Math.sqrt(2)+ " Fake Version: "+ sqrt(2,0.0000000000001));
-
-      for(int i=0;i<20;i++){
-        System.out.println(fib(i));
-      }
-
-      System.out.println(makeAllSums(3));
-      System.out.println(makeAllSums(4));
-    }
+    
 }
