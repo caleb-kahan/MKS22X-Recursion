@@ -30,7 +30,7 @@ public class recursion{
       makeAllSums(n,0,returner);
       return returner;
     }
-    public static void makeAllSums(int n,int sum, ArrayList<Integer> adder){
+    private static void makeAllSums(int n,int sum, ArrayList<Integer> adder){
       if(n==0)
         adder.add(sum);
       else{
