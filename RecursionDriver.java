@@ -4,6 +4,7 @@ public static void main(String[] args){
       for(i=0;i<5;i++){
 	testFib(i);
 	testSqrt(i);
+	System.out.println(recursion.makeAllSums(i));
       }
       testFib(i);
     }
